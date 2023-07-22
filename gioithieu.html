@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Được thành lập vào năm 2023, chúng tôi là một trong những nhà phân phối ĐTDĐ hàng đầu tại Việt Nam. Tại 
+			cửa hàng của chúng tôi, bạn sẽ tìm thấy một sự lựa chọn đa dạng của các thương hiệu điện thoại hàng 
+			đầu trên thị trường, bao gồm iPhone, Samsung, Huawei, Xiaomi và nhiều thương hiệu khác. Chúng tôi cam 
+			kết cung cấp các sản phẩm chất lượng cao và mới nhất để đáp ứng nhu cầu của khách hàng.
+                </p>
+                <br />
+                <p>
+                   Đội ngũ nhân viên của chúng tôi là những chuyên gia có kinh nghiệm trong lĩnh vực này và sẵn sàng tư vấn 
+			và hỗ trợ bạn trong việc lựa chọn sản phẩm phù hợp với nhu cầu và ngân sách của bạn.<br />
+                    Ngoài ra, chúng tôi cũng cung cấp các dịch vụ sửa chữa và bảo hành cho điện thoại di động. Đội ngũ kỹ 
+			thuật của chúng tôi có kiến thức và kỹ năng để xử lý các sự cố phần cứng và phần mềm, đảm bảo điện 
+			thoại của bạn được sửa chữa một cách chính xác và nhanh chóng.<br />
+                    Chúng tôi hy vọng bạn sẽ thích thú với sản phẩm và dịch vụ của chúng tôi. Hãy đến và thăm cửa hàng của 
+			chúng tôi để khám phá thêm và có một trải nghiệm mua sắm tuyệt vời!<br />
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

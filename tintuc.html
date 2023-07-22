@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="http://doanhnghiepvn.vn/kinh-doanh-va-tieu-dung/bang-gia-iphone-thang-6-2023-giam-gia-kich-san/20230605085653413" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Bảng giá iPhone tháng 6/2023: Giảm giá kịch sàn</h2>
+                </a>
+                <br/>
+                <h5>Doanh ngiệp &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://thanhnien.vn/lo-dien-thiet-ke-galaxy-z-flip5-voi-man-hinh-ngoai-lon-185230620135602933.htm" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>Lộ diện thiết kế Galaxy Z Flip5 với màn hình ngoài lớn</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vov.vn/cong-nghe/iphone-12-va-iphone-12-mini-nang-cap-ios-17-lieu-co-nhu-mong-doi-post1029142.vov" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>iPhone 12 và iPhone 12 mini nâng cấp iOS 17: Liệu có như mong đợi?</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://vietq.vn/smartphone-5g-chat-luong-cao-cua-lg-lo-thong-so-ky-thuat-d177432.html" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>Smartphone 5G chất lượng cao của LG lộ thông số kỹ thuật</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://zingnews.vn/meo-chup-anh-don-gian-den-bat-ngo-tren-iphone-post1440896.html" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Mẹo chụp ảnh đơn giản đến bất ngờ trên iPhone</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

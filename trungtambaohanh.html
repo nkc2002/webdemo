@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trung tâm bảo hành - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/baohanh.css">
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+
+<body>
+
+    <script>addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script>addHeader();</script>
+
+        <table>
+            <tr>
+                <td colspan="4" class="header-table">
+                    <marquee behavior="scroll" direction=left>Các trung tâm bảo hành của Smartphone Store</marquee>
+                </td>
+            </tr>
+            <tr>
+                <th class="col1">STT</th>
+                <th class="col2">Địa chỉ</th>
+                <th class="col3">Điện thoại</th>
+                <th class="col4">Thời gian làm việc</th>
+            </tr>
+
+            <script>
+                var trungtam = [
+                    ["48 Vạn Bảo, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội"               , "0111111111" , "8h00 - 17h00"],
+                    ["59 Nguyễn Công Trứ, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội"    , "0222222222" , "8h00 - 17h00"],
+                    ["402 Xã Đàn, Phường Ô Chợ Dừa, Quận Đống Đa, Hà Nội"                , "0333333333" , "8h00 - 17h00"],
+                    ["8 Kim Đồng, Phường Giáp Bát, Quận Hoàng Mai, Hà Nội"               , "0444444444" , "8h00 - 17h00"],
+                    ["216 Lê Lợi, Thị Trấn Vân Đình, Ứng Hòa"                            , "0555555555" , "8h00 - 17h00"],
+                    ["154 Khuất Duy Tiến, Phường Nhân Chính, Quận Thanh Xuân, Hà Nội"    , "0666666666" , "8h00 - 17h00"],
+                    ["256 Ngô Gia Tự, Phường Đức Giang, Quận Long Biên, Hà Nội"          , "0777777777" , "8h00 - 17h00"],
+                    ["14 ngõ 75 Ngô Xuân Quảng, Gia Lâm, Hà Nội"                         , "0888888888" , "8h00 - 17h00"],
+                    ["203 Chùa Thông, Phường Sơn Lộc, Thị xã Sơn Tây, Hà Nội"            , "0999999999" , "8h00 - 17h00"],
+                    ["560 Phố Nả, Xã Chu Minh, Huyện Ba Vì, Hà Nội"                      , "0101010101" , "8h00 - 17h00"],
+                    ["220 Cao Lỗ, Uy Nỗ, Huyện Đông Anh, Hà Nội"                         , "0110110110" , "8h00 - 17h00"],
+                    ["100 Thị Trấn Quốc Oai, Huyện Quốc Oai, Hà Nội"                     , "0120120120" , "8h00 - 17h00"],
+                ]
+
+                for (var i = 0; i < trungtam.length; i++) {
+                    var link = 'https://maps.google.com/maps?q=' + trungtam[i][0];
+                    document.write(`
+                        <tr>
+                            <td class="col1">` + (i + 1) + `</td>
+                            <td class="col2"> 
+                                <a href="`+link+`" target="_blank" title="Xem bản đồ">
+                                    ` + trungtam[i][0] +`
+                                </a>
+                            </td>
+                            <td class="col3">` + trungtam[i][1] +`</td>
+                            <td class="col4">` + trungtam[i][2] +`</td>
+                        </tr>
+                    `)
+                }
+            </script>
+        </table>
+
+    </section>
+
+    <script>addContainTaiKhoan(); </script>
+
+    <div class="footer">
+            <script>addFooter();</script>
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
